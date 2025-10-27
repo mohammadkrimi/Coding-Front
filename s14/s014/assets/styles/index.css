@@ -1,0 +1,123 @@
+:root {
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* New */
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  background: blue;
+}
+.flex {
+  margin-top: 200px;
+}
+.flex ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -5px -5px 0; */
+}
+.flex li {
+  width: 33.333%;
+  /* padding: 5px; */
+}
+.flex .box {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.box {
+  color: white;
+  background: black;
+  border: solid 2px red;
+}
+
+.grid {
+  margin-bottom: 200px;
+  background-color: gray;
+}
+.grid.simple ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: start;
+  gap: 10px;
+  aspect-ratio: 1 / 1;
+}
+.grid .box {
+  width: 100%;
+  height: 100%;
+}
+.grid .foo {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.grid .foo .box {
+  background: orange;
+}
+
+.grid .bar {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid .bar .box {
+  background: green;
+}
+
+.grid .buz {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.grid .buz .box {
+  background: purple;
+}
+
+.grid.area ul {
+  display: grid;
+  grid-template-areas:
+    "jay jay jay"
+    "moh moh rez"
+    "moh moh rez";
+  gap: 10px;
+  aspect-ratio: 1 / 1;
+}
+
+.grid .header {
+  grid-area: jay;
+}
+.grid .header .box {
+  background-color: blue;
+}
+
+.grid .main {
+  grid-area: moh;
+}
+.grid .main .box {
+  background-color: green;
+}
+
+.grid .aside {
+  grid-area: rez;
+}
+.grid .aside .box {
+  background-color: pink;
+}

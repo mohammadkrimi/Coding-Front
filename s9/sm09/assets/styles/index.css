@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+footer{
+    background-color: #4062BB;
+    text-align: center;
+}
+
+
+footer p{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    
+}
+
+
+footer img{
+    margin: 30px 38px;
+}
+
+
+.socialmedia{
+     padding: 100px 0 71px 0;
+}
+

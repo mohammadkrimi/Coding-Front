@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", Brush Script MT;
+  font-style: normal;
+
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.m-spacer {
+  margin: 50px 0;
+}
+.m-b-spacer {
+  margin-bottom: 50px;
+}
+.p-spacer {
+  padding: 50px 0;
+}
+
+.yellow {
+  background-color: yellow;
+  color: black;
+}
+.red {
+  background-color: red;
+  color: black;
+}
+.green {
+  background-color: green;
+  color: white;
+}
+.white {
+  background-color: white;
+  color: black;
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+.purple {
+  background-color: purple;
+  color: white;
+}
+.black {
+  background-color: black;
+  color: white;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+.row.justify-between {
+  justify-content: space-between;
+}
+.row.justify-around {
+  justify-content: space-around;
+}
+.row.justify-evenly {
+  justify-content: space-evenly;
+}
+.row.justify-center {
+  justify-content: center;
+}
+.row.justify-end {
+  justify-content: end;
+}
+
+.row.items-center {
+  align-items: center;
+}
+.row.items-end {
+  align-items: end;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+.row.column {
+  flex-direction: column;
+}
+.row.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.row .grow-1 {
+  flex-grow: 1;
+}
+.row .grow-2 {
+  flex-grow: 2;
+}
+.row .grow-3 {
+  flex-grow: 3;
+}
+
+.w-75 {
+  width: 75%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-12 {
+  width: 12.5%;
+}

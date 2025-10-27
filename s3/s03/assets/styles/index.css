@@ -1,0 +1,108 @@
+ .foo .jay {
+  background-color: pink;
+  text-align: right;
+}
+.bar .jay {
+  background-color: aqua;
+  text-align: left;
+}
+.buz .jay {
+  background-color: greenyellow;
+  text-align: center;
+}
+#milad {
+  border: solid 2px red;
+} 
+
+.card {
+  background-color: aliceblue;
+  border: solid 2px black;
+
+   border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; 
+  border-radius: 15px;
+}
+
+.card.error {
+  border-color: red;
+  background-color: pink;
+
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.list-item {
+  color: blue;
+}
+.list-item.foo {
+  color: black;
+}
+.list-item.error {
+  color: red;
+}
+
+.card.color {
+  background-color: inherit;
+  background-color: rgb(255, 0, 0); 
+  background-color: #ff0000; */
+  background-color: rgba(255, 0, 0, 0.5); 
+  background-color: #ff00006f; 
+  opacity: 1;
+}
+body {
+  margin: 0;
+}
+.text-wrapper {
+  background-color: blue;
+  border: solid 4px green;
+  height: 100px;
+  overflow: auto;
+}
+.container {
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text {
+  background-color: pink;
+  margin: 15px;
+   margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px; 
+  margin: 15px 0 15px 0; 
+   margin: 15px 0; 
+}
+* {
+  box-sizing: border-box;
+}
+.jay-wrapper {
+  background: gray;
+}
+.jay {
+  color: white;
+  background-color: red;
+  width: 150px;
+}
+.jay.alt {
+  background-color: blue;
+  border: solid 5px green;
+}
+
+.list-2 {
+  padding: 0;  will talk about this later 
+  background-color: red;
+  margin: 0;
+  list-style: none;
+  width: 200px;
+  text-align: center;
+}
+.list-2-item {
+  border: solid 1px green;
+  display: inline;
+  font-size: 14px;
+  font-weight: 900;
+}

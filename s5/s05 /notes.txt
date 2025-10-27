@@ -1,0 +1,21 @@
+justify-content:
+    start => ltr: left, rtl: right (default)
+    end => ltr: right, rtl: left
+    center
+    space-between
+    space-around
+
+align-items:
+    stretch => all heights set to max height (default)
+    center => align to center
+    end => align to bottom
+    start => align to top
+
+flex-wrap:
+    nowrap => force one line (default)
+    wrap => break line if needed
+
+flex-grow:
+    0 - infinity => priority in gaining extra space left
+flex-shrink:
+    0 - infinity => priority in sharing space needed

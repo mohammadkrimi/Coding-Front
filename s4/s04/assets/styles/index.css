@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", Brush Script MT;
+  font-style: normal;
+
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.container {
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* .arc-red {
+  width: 500px;
+  height: 250px;
+  border-top-right-radius: 250px;
+  border-top-left-radius: 250px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.arc-orange {
+  width: 460px;
+  height: 230px;
+  margin: 20px auto 0 auto;
+  border-top-right-radius: 270px;
+  border-top-left-radius: 270px;
+  background-color: orange;
+  overflow: hidden;
+}
+
+.arc-yellow {
+  width: 420px;
+  height: 210px;
+  margin: 20px auto 0 auto;
+  border-top-right-radius: 270px;
+  border-top-left-radius: 270px;
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.arc-green {
+  width: 380px;
+  height: 190px;
+  margin: 20px auto 0 auto;
+  border-top-right-radius: 270px;
+  border-top-left-radius: 270px;
+  background-color: green;
+  overflow: hidden;
+} */
+
+.arc {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 99999999999999px;
+  border-top-left-radius: 99999999999999px;
+  padding: 20px 20px 0 20px;
+}
+.arc-red {
+  width: 500px;
+  height: 250px;
+  background-color: red;
+}
+.arc-orange {
+  background-color: orange;
+}
+.arc-yellow {
+  background-color: yellow;
+}
+.arc-green {
+  background-color: green;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  /* width: 400px; */
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cat-link {
+  background-color: red;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cat-img {
+  background-color: blue;
+  opacity: 0.5;
+}

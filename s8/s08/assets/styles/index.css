@@ -1,0 +1,337 @@
+:root {
+  --body-color: #6e4238;
+  --body-color-darken: #431529;
+  --body-color-lighten: #955b51;
+  --skin-color: rgb(246, 190, 156);
+  --nose-color: #ef425f;
+  --nose-color-darken: #a92a40;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 90px;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  background: rgb(258, 209, 29);
+}
+.container {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.canvas {
+  width: 900px;
+  height: 600px;
+  position: relative;
+}
+
+.shadow {
+  background-color: rgb(255, 163, 3);
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 50px;
+  left: 200px;
+  z-index: 0;
+}
+
+.monkey {
+  width: 400px;
+  height: 320px;
+  position: absolute;
+  bottom: 75px;
+  left: 250px;
+  z-index: 10;
+}
+
+.monkey-head {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+.monkey-face {
+  background-color: var(--body-color);
+  width: 150px;
+  height: 180px;
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  position: relative;
+}
+.monkey-nose {
+  --nose-size: 50px;
+  background-color: var(--nose-color);
+  border-radius: 50%;
+  width: var(--nose-size);
+  height: var(--nose-size);
+  position: absolute;
+  top: 70px;
+}
+.monkey-nose_hole {
+  --nose-spacing: 30px;
+  background-color: var(--nose-color-darken);
+  border-radius: 50%;
+  /* width: 20px;
+  height: 20px; */
+  /* width: calc(50px - 30px);
+  height: calc(50px - 30px); */
+  width: calc(var(--nose-size) - var(--nose-spacing));
+  height: calc(var(--nose-size) - var(--nose-spacing));
+  position: absolute;
+  top: calc(var(--nose-spacing) / 2);
+  left: calc(var(--nose-spacing) / 2);
+  animation-name: nose-breath;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.monkey-nose--left {
+  left: 50px;
+}
+.monkey-nose--right {
+  left: 90px;
+}
+
+.monkey-mouth {
+  background-color: var(--skin-color);
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50px;
+  top: 110px;
+}
+.monkey-mouth_teeth {
+  background-color: white;
+  height: 6px;
+  width: 30px;
+  border-radius: 5px;
+  position: absolute;
+  top: 13px;
+  left: 30px;
+}
+.monkey-ear {
+  background-color: var(--body-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 30px;
+}
+.monkey-ear--right {
+  left: -30px;
+}
+.monkey-ear--left {
+  background-color: var(--body-color-darken);
+  right: -10px;
+}
+.monkey-ear_hole {
+  background-color: var(--body-color-darken);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.monkey-eye {
+  width: 30px;
+  height: 15px;
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.monkey-eye--right {
+  left: 65px;
+}
+.monkey-eye--left {
+  left: 90px;
+}
+.monkey-eye_pupil {
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 11px;
+  top: 4px;
+}
+.monkey-eyebrow {
+  width: 75px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: black;
+  position: absolute;
+  left: 55px;
+  top: 32px;
+  transition: all 300ms;
+  /* transition-property: all;
+  transition-duration: 300ms; */
+}
+.monkey-body {
+  background-color: var(--body-color);
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 40px;
+}
+
+.monkey-arm {
+  width: 80px;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50px;
+  position: absolute;
+  bottom: 0;
+}
+.monkey-arm_hand {
+  width: 25px;
+  height: 20px;
+  background-color: var(--skin-color);
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 20px;
+}
+.monkey-arm--right {
+  background-color: var(--body-color-lighten);
+  z-index: 2;
+  left: 190px;
+}
+.monkey-arm--left {
+  background-color: var(--body-color-darken);
+  right: 15px;
+}
+.monkey-arm--left .monkey-arm_hand {
+  background-color: var(--body-color-darken);
+  height: 22px;
+}
+
+.monkey-leg {
+  background-color: var(--body-color);
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  bottom: 5px;
+}
+.monkey-leg--right {
+  left: 90px;
+}
+.monkey-leg--left {
+  left: 110px;
+  background-color: var(--body-color-darken);
+}
+
+.monkey-tail {
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+.monkey-tail_s1 {
+  border-top: 12px solid var(--body-color-darken);
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.monkey-tail_s2 {
+  border: 12px solid var(--body-color-darken);
+  border-right-width: 0;
+  width: 40px;
+  height: 40px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 35px;
+}
+.monkey-tail_s3 {
+  border: 12px solid var(--body-color-darken);
+  border-left-width: 0;
+  width: 40px;
+  height: 40px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+}
+.monkey-tail_s4 {
+  border-top: 12px solid var(--body-color-darken);
+  width: 80px;
+  position: absolute;
+  bottom: 2px;
+  left: -10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.shadow:hover {
+  background-color: rgb(178, 113, 1);
+}
+
+.shadow:hover + .monkey {
+  bottom: 120px;
+}
+.monkey:hover .monkey-eyebrow {
+  top: 20px;
+}
+
+.foo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* animation: ; */
+  animation-name: bar;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  /* animation-delay: 1s; */
+  /* animation-direction: alternate-reverse; */
+}
+@keyframes bar {
+  /* from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  } */
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes nose-breath {
+  0% {
+    --nose-spacing: 30px;
+  }
+  50% {
+    --nose-spacing: 27px;
+  }
+  100% {
+    --nose-spacing: 30px;
+  }
+}

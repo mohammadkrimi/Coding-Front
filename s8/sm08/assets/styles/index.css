@@ -1,0 +1,408 @@
+:root{
+    --font: "Lalezar";
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Vazirmatn", "Lalezar", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0 auto;
+  
+}
+
+
+.menu{
+    display: flex;
+    margin-bottom: 83px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.list-menu{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    padding-right: 899px;
+}
+
+
+#hero{
+    margin: 0 auto;
+    width: 1265px;
+    height: 588px;
+    position: relative;
+    margin-bottom: 163px;
+}
+
+.title{
+    color: rgba(52, 110, 22, 1);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -60px;
+}
+
+h1{
+font-size: 300px;
+font-weight: 400;
+font-family: var(--font);
+}
+ 
+
+.lemon{
+    position: absolute;
+    top: 198px;
+    right: 605px;
+    animation-name: lemon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+}
+@keyframes lemon{
+    0%{
+        transform: rotate(15deg);
+    }
+    50%{
+         transform: rotate(-15deg);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
+
+
+.big-circle{
+    background-color: rgba(244, 177, 13, 0.8);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border-radius: 50%;
+    top: 86px;
+    right: 373.5px;
+    animation-name: bigcircle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+}
+@keyframes bigcircle{
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(95%);
+    }
+    100%{
+      transform: scale(100%);
+    }
+}
+
+
+.big-lemon{
+    position: absolute;
+    top: 102px;
+    right: 390.5px;
+}
+
+
+.bottle{
+    position: absolute;
+    right: 520px;
+}
+
+
+.mint{
+    position: absolute;
+    top: 170px;
+    right: 660px;
+}
+
+
+.kiwi{
+    position: absolute;
+    right: 487px;
+    bottom: 18px;
+    animation-name: kiwi;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+}
+@keyframes kiwi{
+    0%{
+        transform: rotate(-15deg);
+    }
+    50%{
+         transform: rotate(15deg);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+
+
+.half-lemon{
+    --space: 
+    width: 94px;
+    height: 106px;
+    position: absolute;
+    top: 240px;
+    right: 456px;
+    animation-name: half-lemon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+}
+@keyframes half-lemon{
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(130%);
+    }
+    100%{
+      transform: scale(100%);
+    }
+}
+
+
+.juice{
+    position: absolute;
+    bottom: 109PX;
+    right: 63PX;
+    bottom: 109px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+
+
+.juice-text{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+.juice-logo{
+    background-color: rgba(4, 2, 2, 1);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.juice-logo a{
+    color: white;
+    text-decoration: none;   
+}
+
+
+
+
+.features {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  gap: 12px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 350px;
+}
+
+.icon {
+  width: 59px;
+  height: 59px;
+  background: rgba(4, 2, 2, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+
+.text p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+h3{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--font);
+    text-align: center;
+}
+
+
+.flavor-container{
+background-color: rgba(4, 2, 2, 1);
+color: rgba(255, 255, 255, 1);
+margin: 0 auto;
+border-radius: 90px;
+width: 1200px;
+padding-right: 117px;
+padding-left: 117px;
+margin-top: 99px;
+}
+
+
+.list3{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 163px;
+    flex-direction: row-reverse;
+    position: relative;
+    top: -75px;
+}
+    
+
+
+.list4{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 163px;
+    flex-direction: row-reverse;
+    padding-bottom: 60px;
+}
+
+
+.flavor-item-img{
+    --spacing: 150px;
+    background-color: rgba(52, 110, 22, 1);
+    width: var(--spacing);
+    height: var(--spacing);
+    align-content: center;
+    border-radius: 50%;
+    margin: 0 auto; 
+    transition-duration: 1s;
+}
+
+
+.flavor-item-img:hover{
+    transform: scale(1.2);
+    
+}
+
+
+
+h4{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin: 12px;
+}
+
+
+.fofo{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+/* .container-store{
+
+} */
+
+
+.store-banner{
+    padding-top: 50PX;
+    padding-bottom: 50px;
+}
+
+
+h5{
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    font-family: var(--font);
+}
+
+
+.store{
+    margin: 50px
+}
+
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 163px;
+    flex-direction: row-reverse;
+}
+
+
+.list2{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 367px;
+    flex-direction: row-reverse;
+}
+
+
+
+.buz{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.footer{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.juice-logo:hover{
+    background-color: rgba(52, 110, 22, 1);
+}

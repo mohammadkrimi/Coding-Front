@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+
+.img{
+
+    text-align: center;
+}
+
+.picture{
+    border: solid 2px rgba(243, 244, 249, 1);
+    border-radius: 50px;
+    overflow: auto;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);  
+}
+
+body{
+
+    background-color: rgba(42, 130, 96, 1);
+        margin-top: 60px;
+}
+
+.name{
+        text-align: center;
+        margin: auto;
+        font-size: 21px;
+        color:rgba(243, 244, 249, 1);
+    }
+
+.job-titel{
+    text-align: center;
+    margin: auto;
+    color: rgba(121, 179, 157, 1);
+    font-size: 16px;
+}
+
+.logos{
+    text-align: center;
+    margin: auto;
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.info{
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.cv{ 
+    background-color: rgba(36, 59, 72, 1);
+    color: rgba(243, 244, 249, 1);
+    border: solid 15px rgba(36, 59, 72, 1);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    width: 200px;
+    font-size: 10px;  
+}

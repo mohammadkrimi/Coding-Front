@@ -1,0 +1,155 @@
+:root {
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* New */
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(0, 255, 255, 0.491);
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+}
+
+.foo {
+  background-color: red;
+  height: 50px;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+#a,
+#b,
+#c {
+  height: 100vh;
+  scroll-margin-top: 50px;
+}
+
+#a {
+  /* background: brown; */
+  /* background-image: linear-gradient(90deg, red 0px, blue 75%); */
+  background-image: url("../images/images.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-size: contain; */
+  /* background-size: 200px; */
+  /* background-attachment: fixed; */
+  background-color: red;
+  /* background: center no-repeat url("../images/images.jpeg"); */
+}
+
+#c {
+  background-color: green;
+}
+#b {
+  background-color: orange;
+}
+
+#b img {
+  display: block;
+  width: 400px;
+  margin-bottom: 20px;
+  background-color: grey;
+}
+
+#b .b2 {
+  height: 400px;
+  object-fit: cover;
+  object-position: left;
+}
+#b .b3 {
+  aspect-ratio: 1.618;
+  object-fit: cover;
+  object-position: left;
+}
+
+#c .bar {
+  color: white;
+}
+
+#c .bar:before {
+  content: "before ";
+  color: red;
+}
+
+#c .bar:after {
+  content: " after ";
+  color: red;
+}
+#c .quot:before {
+  content: "«";
+}
+#c .quot:after {
+  content: "»";
+}
+
+#c .buz:after {
+  content: attr(data-foo);
+}
+
+.custom-tooltip {
+  margin: 100px;
+
+  position: relative;
+}
+.custom-tooltip:after {
+  content: attr(title);
+  padding: 6px;
+  border-radius: 5px;
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  background-color: grey;
+}
+.custom-tooltip:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 150%);
+  border: solid 5px;
+  border-top-color: gray;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  box-sizing: border-box;
+}
+
+.custom-tooltip:after,
+.custom-tooltip:before {
+  color: white;
+  opacity: 0;
+  transition: opacity 300ms;
+  pointer-events: none;
+}
+.custom-tooltip:hover:after,
+.custom-tooltip:hover:before {
+  opacity: 1;
+}

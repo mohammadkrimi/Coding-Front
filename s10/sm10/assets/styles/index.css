@@ -1,0 +1,269 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  background-color: rgba(71, 76, 89, 1);
+  width: 360px;
+  margin: 0 auto;
+}
+
+
+.container{
+  width: 312px;
+  margin: 0 auto;
+}  
+@media (min-width: 1024px){
+  .container{
+    width: 1000px;
+  }  
+}  
+
+
+header{
+  padding: 19px 0 19px 0;
+}
+
+
+header p{
+  color: rgba(217, 209, 199, 1);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+
+  
+}
+
+
+@media (min-width:1024px) {
+  header{
+    padding: 24px 0 24px 0;
+    margin: 0 auto;
+  }
+}
+
+
+.poster{
+  position: relative;
+}  
+
+
+.cover{
+  position: relative;
+  z-index: 1;
+}  
+
+
+.disk{
+  position: absolute;
+  top: 32px;
+  bottom: 0;
+  right: 0;
+  left: 110px;
+}  
+
+
+h1{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+  color: rgba(217, 209, 199, 1);
+
+}  
+
+
+h2{
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(217, 209, 199, 0.5);
+}  
+
+
+h2 span{
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(217, 209, 199, 0.5);
+}  
+
+
+.text p{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(217, 209, 199, 0.4);
+}  
+
+
+.btn{
+  background-color: rgba(19, 16, 38, 1);
+  padding: 12px 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}  
+
+
+.spotify{
+  text-decoration: none;
+  color: rgba(217, 209, 199, 1);
+}  
+
+
+@media (min-width: 1024px) {
+  .released{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .btn{
+    width: 191px;
+    background-color: transparent;
+    color: rgba(19, 16, 38, 1);
+    border: 2px solid rgba(19, 16, 38, 1);
+  }
+  .btn a{
+    color: rgba(19, 16, 38, 1);
+  }
+  .btn img{
+    color: rgba(19, 16, 38, 1);
+  }
+  .text{
+    padding-left: 113px;
+    
+  }
+  
+  
+}
+
+
+h3{
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(217, 209, 199, 1);
+  margin-top: 50px;
+}  
+
+
+.track-ul{
+  padding-left: 0;
+}  
+
+
+.track-ul li{
+  display: flex;
+  align-items: baseline;
+ 
+}  
+
+
+.title{
+  color: rgba(217, 209, 199, 1);
+  font-size: 18px;
+  font-weight: 700;
+}  
+
+
+.time{
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(217, 209, 199, 0.5);
+}  
+
+
+.dots{
+  flex-grow: 1;
+  border-bottom: 1px dotted rgba(217, 209, 199, 0.15);
+  margin: 0 12px;
+
+}  
+
+
+h4{
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(217, 209, 199, 1);
+}
+
+
+.albums{
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+
+.album{
+  padding: 16px 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  color: rgba(217, 209, 199, 1);
+  width: 150px;
+}
+
+
+.album figcaption{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.album img{
+  margin: 0 auto;
+}
+
+
+@media (min-width: 1024px) {
+  .albums{
+    gap: 24px;
+  }
+  .album{
+    width: 232px;
+  }
+  .album figcaption{
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .album img{
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+
+footer{
+  padding: 12px 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+footer p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #131026;
+}
+
+
+@media (min-width: 1024px) {
+  footer p{
+    padding: 24px 10px; 
+    text-align: center;  
+    background-color: rgba(0, 0, 0, 0.1);  
+  
+}
+
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autumn Jackets</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0 auto;
+      background-color: #f2f2f2;
+      position: relative;
+      padding-bottom: 70px; /* Space for fixed nav */
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ========== MOBILE BASE STYLES (360px) ========== */
+
+    @media screen and (max-width: 767px) {
+      body {
+        width: 360px;
+      }
+
+      .header {
+        background: linear-gradient(to bottom right, #2d493a, #2f5740);
+        color: white;
+        padding: 30px 20px 20px 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header h1 {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 36px;
+      }
+
+      .header h2 {
+        font-size: 18px;
+        margin-top: 5px;
+        font-weight: 400;
+        color: #dcdcdc;
+      }
+
+      .open-collection {
+        margin-top: 15px;
+        display: inline-block;
+        background-color: #fdd835;
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .header-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 220px;
+        height: auto;
+      }
+
+      .circle-bg {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background: #1e3027;
+        border-radius: 50%;
+        bottom: -30px;
+        right: -30px;
+        z-index: 0;
+      }
+
+      .header img {
+        position: relative;
+        z-index: 1;
+      }
+
+      .menu-icons {
+        display: flex;
+        justify-content: space-around;
+        background-color: #fdd835;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 360px;
+        z-index: 999;
+      }
+
+      .menu-icons img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    /* ========== DESKTOP STYLES (>=768px) ========== */
+    @media screen and (min-width: 768px) {
+      body {
+        width: 1504px;
+        padding-bottom: 0;
+      }
+
+      .header {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #2d493a, #2f5740);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 60px;
+        position: relative;
+      }
+
+      .header h2 {
+        font-size: 32px;
+        opacity: 0.5;
+      }
+
+      .header h1 {
+        font-size: 70px;
+        line-height: 70px;
+        font-weight: 900;
+      }
+
+      .header p {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .open-collection {
+        margin-top: 30px;
+        background: #fdd835;
+        color: black;
+        padding: 12px 30px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .circle-bg {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: #1e3027;
+        border-radius: 50%;
+        right: 80px;
+        bottom: 80px;
+        z-index: 1;
+      }
+
+      .header-img {
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        height: 500px;
+        z-index: 2;
+      }
+
+      .badge-price {
+        position: absolute;
+        right: 240px;
+        top: 180px;
+        background-color: #fdd835;
+        color: black;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        padding-top: 14px;
+        font-weight: bold;
+        z-index: 3;
+      }
+
+      .badge-price::before {
+        content: "$299";
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
+
+      .menu-icons {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h2>2022</h2>
+    <h1>Autumn<br>Jackets</h1>
+    <h2>Autumn Sale / Up to 50% OFF</h2>
+    <a href="#" class="open-collection">Open Collection</a>
+    <div class="circle-bg"></div>
+    <img src="https://i.imgur.com/Ml4hQ2K.png" alt="Jacket" class="header-img">
+    <div class="badge-price">40% OFF</div>
+  </div>
+
+  <div class="menu-icons">
+    <img src="https://img.icons8.com/ios-glyphs/30/000000/phone.png" alt="Phone">
+    <img src="https://img.icons8.com/ios-glyphs/30/000000/idea.png" alt="Idea">
+    <img src="https://img.icons8.com/ios-glyphs/30/000000/home.png" alt="Home">
+    <img src="https://img.icons8.com/ios-glyphs/30/000000/user.png" alt="User">
+    <img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-cart.png" alt="Cart">
+  </div>
+</body>
+
+</html>

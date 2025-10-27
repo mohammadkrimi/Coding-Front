@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 393px;
+    margin: 0 auto;
+    background-color: rgba(238, 235, 221, 1);
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        width: 1512px;
+    }
+
+}
+
+
+.container {
+    padding: 0 24px;
+}
+
+@media screen and (min-width: 1024) {
+    .container {
+        padding: 130px 186px 70px 186px;
+    }
+
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+
+header img {
+    height: 30px;
+    width: 45px;
+}
+
+
+.melli {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+    .melli {
+        display: flex;
+        gap: 70px;
+        flex-direction: column;
+    }
+}
+
+
+.hero{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .hero {
+        
+}
+}
+
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+
+}
+
+
+.customer img {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    margin-left: -10px;
+}
+
+
+.customer p {
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    font-family: Lalezar;
+}
+
+
+.info {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(27, 23, 23, 0.65);
+}
+
+
+.customer-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(27, 23, 23, 0.65);
+}
+
+
+.btn-call {
+    border: 1px solid rgba(27, 23, 23, 0.65);
+    border-radius: 35px;
+    padding: 8px 32px;
+    display: inline-block;
+}
+
+
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.btn-call:hover{
+    border: 1px solid black;
+}
+
+
+.btn-call a {
+    text-decoration: none;
+    color: rgba(27, 23, 23, 0.65);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.btn-buy {
+    border-radius: 35px;
+    padding: 8px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(206, 18, 18, 1);
+}
+
+
+.btn-buy a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.btn-buy:hover{
+    background-color: rgba(129, 0, 0, 1);
+}
+
+
+
+.countries-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+.countries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 60PX;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+h2 {
+    font-size: 36PX;
+    font-weight: 400;
+    font-family: Lalezar;
+}
+
+
+
+
+
+.suggest-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(27, 23, 23, 0.65);
+}
+
+
+.shoes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25PX;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .shoes-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25PX;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
+.shoes-item img {
+    width: 345px;
+    height: 250px;
+    object-fit: cover;
+}
+@media screen and (min-width: 1024px){
+    .shoes-item img{
+        object-fit: fill;
+        object-position: center;
+    }
+    
+}
+
+
+.shoes-item a {
+    text-decoration: none;
+}
+
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.suggest-link {
+    color: rgba(27, 23, 23, 0.65);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+#others {
+    padding: 40px 0 40px 0;
+    text-align: center;
+}
+
+
+#others a {
+    border: 1px solid rgba(27, 23, 23, 0.65);
+    border-radius: 35px;
+    padding: 8px 32px;
+    text-decoration: none;
+    color: rgba(27, 23, 23, 0.65);
+}
+
+
+

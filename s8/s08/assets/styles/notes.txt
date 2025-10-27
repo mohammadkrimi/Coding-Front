@@ -1,0 +1,32 @@
+kebab-case: one-two-three-four
+UPPER-KEBAB-CASE: ONE-TWO-THREE-FOUR
+
+PascalCase: OneTwoThreeFour
+camelCase: oneTwoThreeFour
+
+snake_case: one_two_three_four
+UPPER_SNAKE_CASE: ONE_TWO_THREE_FOUR
+
+
+monkey
+monkey-head
+monkey-body
+monkey-nose
+monkey-nose_hole
+monkey-nose monkey-nose--left
+monkey-nose monkey-nose--right 
+
+تابع - function
+یک بلک‌باکس (نمیدونیم توش چه خبره) که همیشه با ورودی مشخص، یک خروجی مشخص میده
+f(x) = 2x + 1
+    f(1) = (2 * 1) + 1 = 3
+    f(5) = (2 * 5) + 1 = 11
+    f(-10) = (2 * -10) + 1 = -19
+
+
+<div class="a"></div>
+<div class="b"></div>
+
+.a + .b {
+    background: red;
+}

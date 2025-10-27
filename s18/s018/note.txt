@@ -1,0 +1,10 @@
+cd: change directory
+cd ./assets
+
+mkdir: make directory
+mkdir styles/
+
+ls: list
+
+rm: remove
+rm -rf index.html

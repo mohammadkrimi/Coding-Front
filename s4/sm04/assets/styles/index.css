@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    padding: 36px 0 36px 0;
+  }
+    
+
+.list{
+  list-style: none;
+  display: flex;
+
+  
+}
+
+.listul{
+  list-style: none;
+  display: flex;
+
+
+}
+
+  .links {
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding: 18px;
+    
+    
+      
+  }
+
+.get-started{
+  background-color: rgba(216, 70, 11, 1);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 12px 24px 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: auto;
+  
+
+
+ 
+  
+  
+  }
+  
+  .countries {
+  
+    border-radius: 36px;
+    background-color: rgba(246, 246, 242, 1);
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    margin-left: 0%;
+  
+  }
+   .card{
+    background-color: rgba(242, 98, 79, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 40px;
+    width: 980px;
+    height: 480px;
+    display: flex;
+    
+    
+  
+  }
+
+  .cardtext{
+    margin: auto;
+    padding: 12px 12px 12px 32px;
+    
+
+  }
+  .h1{
+    font-size: 48px;
+  }
+
+  .p1{
+    font-size: 16px;
+  
+  
+    
+  
+
+  }
+   .teacher{
+    margin-top: 8px;
+    height: 408px;
+    height: 480px;
+    
+    }
+
+  .container1{
+    height: 192px;
+   
+  
+  
+    
+  
+  }
+
+  .mid{
+    background-color: rgba(249, 242, 219, 1);
+    color: black;
+    display: flex;
+    height: 192px;
+    
+  
+    
+    
+  }
+  .h2{
+
+    font-size: 36PX;
+    margin: auto;
+
+  }
+
+.footer{
+  background-color: rgba(246, 246, 242, 1);
+  height: 88px;
+  padding-top: 30px;
+  padding-bottom: 30PX; 
+ 
+}
+  
+  

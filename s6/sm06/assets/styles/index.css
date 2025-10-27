@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+
+
+.hero {
+  background-image: url(../img/Rectangle\ 1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+.container{
+  margin:  0 auto;
+  width: 1440px;
+  
+}
+
+
+.header {
+  padding-top: 40px;
+  padding-left: 241px;
+  font-size: 21px;
+  font-weight: 900;
+  color: white;
+
+}
+
+
+.content {
+  display: flex;
+}
+
+
+
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: white;
+}
+
+
+
+.text {
+  padding-left: 235px;
+  padding-top: 231px;
+  padding-right: 266px;
+  color: white;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+
+
+
+
+.store {
+  display: flex;
+  padding-left: 235px;
+  padding-bottom: 80px;
+}
+
+
+
+
+
+
+.icons {
+  background-color: rgba(242, 247, 248, 1);
+  display: flex;
+  align-items: center;
+  padding-left: 234.5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 38px 0 38px 0;
+  padding-left: 234PX;
+}
+
+
+.icon {
+  padding: 0 50px 0 25px;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 38PX;
+  font-weight: 400;
+}
+
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+
+.mid-info {
+  padding-left: 221px;
+  padding-right: 219px;
+  text-align: center;
+  
+}
+
+.buz {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin: auto;
+
+}
+
+
+
+.infocard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 446px;
+  background-color: rgba(242, 247, 248, 1);
+}
+
+
+.img {
+  border-radius: 70px;
+}
+
+
+.name {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+
+h4 {
+  margin: 12px 0 -6px 0;
+}
+
+
+
+.title {
+  color: rgba(64, 98, 187, 1);
+  font-size: 17px;
+  font-weight: 400
+}
+
+
+.info {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+footer {
+  background-color: rgba(64, 98, 187, 1);
+  font-size: 16px;
+  font-weight: 400;
+  height: 240px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.logos {
+  display: inline-block;
+  padding: 38px;
+}

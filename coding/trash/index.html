@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/main.css">
+    <script src="https://kit.fontawesome.com/fd8a5a7612.js" crossorigin="anonymous"></script>
+    <title>checkWeather</title>
+</head>
+<body>
+  <div class="card">
+    <div class="search">
+        <input type="text" placeholder="نام شهر را وارد کنید..." spellcheck="false">
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div class="error">
+        <p>نام شهر صحیح نیست...</p>
+    </div>
+    <div class="weather">
+        <img src="./media/cloud-and-yellow-lightning-16534.png" alt="" class="weatherIcon">
+        <h1 class="temp"> &#8451;</h1>
+        <h2 class="city" id="city"></h2>
+        <div class="detail">
+            <div class="col">
+                <div class="detailImg">
+                    <img src="./media/blue-wind-16544.png" alt="">
+                </div>
+                <div>
+                    <p class="windy">20  km/h</p>
+                    <p class="detailTittel">سرعت وزش باد</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="detailImg">
+                    <img src="./media/humidity.png" alt="">
+                </div>
+                <div>
+                    <p class="humidity">50%</p>
+                    <p class="detailTittel">رطوبت</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+
+
+    <script src="./Js/main.js"></script>
+</body>
+</html>
