@@ -13,14 +13,9 @@ const whoWins = (player, computer) => {
     (player === "Scissors" && computer === "Paper")
   ) {
     return "player";
+  } else {
+    return "computer";
   }
-  return "computer";
-};
-
-const setPlayButtonsDisabled = (disabled) => {
-  document.getElementById("btnRock").disabled = disabled;
-  document.getElementById("btnPaper").disabled = disabled;
-  document.getElementById("btnScissors").disabled = disabled;
 };
 
 const play = (playerChoice) => {
@@ -47,10 +42,16 @@ const play = (playerChoice) => {
         ? `You Win! You: ${playerChoice} | Computer: ${computerChoice}`
         : `You Lose! You: ${playerChoice} | Computer: ${computerChoice}`;
   }
-
+  
   document.getElementById("result").textContent = message;
   document.getElementById("playerScore").textContent = playerScore;
   document.getElementById("computerScore").textContent = computerScore;
+};
+
+const setPlayButtonsDisabled = (disabled) => {
+  document.getElementById("btnRock").disabled = disabled;
+  document.getElementById("btnPaper").disabled = disabled;
+  document.getElementById("btnScissors").disabled = disabled;
 };
 
 const resetGame = () => {
@@ -58,11 +59,10 @@ const resetGame = () => {
   computerScore = 0;
   setPlayButtonsDisabled(false);
   document.getElementById("result").textContent =
-    `First to ${TARGET}. Click a button to play!`;
+  `First to ${TARGET}. Click a button to play!`;
   document.getElementById("playerScore").textContent = playerScore;
   document.getElementById("computerScore").textContent = computerScore;
 };
-
 
 document.getElementById("btnRock").addEventListener("click", () => play("Rock"));
 document.getElementById("btnPaper").addEventListener("click", () => play("Paper"));
