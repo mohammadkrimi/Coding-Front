@@ -1,0 +1,31 @@
+Create => method: POST
+Read => method: GET
+Update => method: PUT/PATCH
+Delete => method: DELETE
+
+CRUD
+
+REST (Representational State Transfer)
+RESTful
+
+
+Status Code
+    100
+        information
+    200
+        success
+    300
+        redirect
+    400
+        Error: issue on the frontend - something wrong with data
+        
+        401
+            not authenticated
+        403
+            not authorized
+        404
+            dose not exist
+        418
+            i'm a teapot
+    500
+        Error: issue on the backend
