@@ -1,0 +1,12 @@
+.hero {
+  background: red;
+  /* @apply bg-red-500; */
+
+  &.selected {
+    background: green;
+  }
+
+  .title {
+    color: white;
+  }
+}

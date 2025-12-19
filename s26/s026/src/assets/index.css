@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.person {
+  border: solid 1px black;
+}
+.person--engineer {
+  color: blue;
+}
+.person--designer {
+  color: purple;
+}
+
+@theme {
+  --color-jay: #ff0ab4;
+  /* --color-red-500: #0000ff; */
+}
