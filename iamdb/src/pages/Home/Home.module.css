@@ -25,12 +25,10 @@
   line-height: 1;
   text-align: center;
 
-  /* prevent weird overflow/cut */
   max-width: 100%;
   overflow: hidden;
 }
 
-/* ✅ Mobile like Figma */
 @media (max-width: 520px) {
   .page {
     padding: 18px 12px;
@@ -41,7 +39,7 @@
   }
 
   .logo {
-    font-size: 72px;   /* مثل عکس دوم */
+    font-size: 72px;   
     margin-bottom: 6px;
     letter-spacing: 1px;
   }

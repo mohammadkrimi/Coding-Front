@@ -8,13 +8,13 @@
   margin: 0 auto;
 }
 
-/* Top (Back + Result Title centered) */
+
 .topRow {
   display: grid;
   grid-template-columns: 44px 1fr 44px;
   align-items: center;
   gap: 10px;
-  margin-bottom: 32px; /* فاصله تا SearchBar */
+  margin-bottom: 32px; 
 }
 
 .backBtn {
@@ -61,7 +61,7 @@
   height: 44px;
 }
 
-/* Search bar row aligns with list/container */
+
 .searchRow {
   width: 100%;
   margin-bottom: 10px;

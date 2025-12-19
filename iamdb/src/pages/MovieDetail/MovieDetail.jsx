@@ -199,7 +199,7 @@ export default function MovieDetail() {
       </div>
 
       <div className={styles.container}>
-        {/* desktop back (same place as results) */}
+        {/* desktop back  */}
         <button
           className={styles.backBtnDesktop}
           type="button"
@@ -209,7 +209,7 @@ export default function MovieDetail() {
           <AngleLeftIcon className={styles.backIconDesktop} />
         </button>
 
-        {/* ✅ MOBILE LAYOUT */}
+        {/*  MOBILE LAYOUT */}
         {isMobile ? (
           <div className={styles.mobileStack}>
             {/* title + genres + desc */}
@@ -248,7 +248,7 @@ export default function MovieDetail() {
               </div>
             </div>
 
-            {/* poster comes AFTER scores */}
+            {/* poster  */}
             <img className={styles.poster} src={poster} alt={title} />
 
             {/* details */}
@@ -286,7 +286,7 @@ export default function MovieDetail() {
               </div>
             </div>
 
-            {/* ✅ fixed bottom button (always visible) */}
+            
             <div className={styles.mobileFavBar}>
               <button
                 className={`${styles.mobileFavBtn} ${fav ? styles.mobileFavBtnActive : ""}`}
@@ -298,7 +298,7 @@ export default function MovieDetail() {
             </div>
           </div>
         ) : (
-          /* ✅ DESKTOP LAYOUT (same as before) */
+          
           <div className={styles.grid}>
             <div className={styles.left}>
               <img className={styles.poster} src={poster} alt={title} />

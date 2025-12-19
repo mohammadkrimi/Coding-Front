@@ -95,13 +95,6 @@ export default function Home() {
           onSelectGenre={handleSelectGenre}
           loading={genresLoading}
         />
-
-        {/* optional: debug small hint (اگر نمیخوای، پاکش کن) */}
-        {/* {!speech.supported && (
-          <div style={{ opacity: 0.6, fontSize: 12, marginTop: 10 }}>
-            Speech recognition not supported in this browser.
-          </div>
-        )} */}
       </div>
     </div>
   );

@@ -40,10 +40,10 @@ export default function Results() {
 
   const abortRef = useRef(null);
 
-  // ✅ Speech hook
+  //  Speech hook
   const speech = useSpeechToText({ lang: "en-US" });
 
-  // ✅ when speech transcript updates → fill the input
+  //  when speech transcript updates → fill the input
   useEffect(() => {
     if (!speech.transcript) return;
     setQuery(speech.transcript);

@@ -87,6 +87,6 @@
   width: min(820px, 92vw);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* ✅ وسط */
+  justify-content: center; 
   gap: 6px;
 }

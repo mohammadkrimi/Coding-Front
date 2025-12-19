@@ -67,7 +67,7 @@ export function useSpeechToText({
     try {
       recognitionRef.current?.start?.();
     } catch {
-      // calling start twice can throw
+    
     }
   }, [supported]);
 
@@ -93,7 +93,7 @@ export function useSpeechToText({
       start,
       stop,
       toggle,
-      setTranscript, // useful if you want to sync external text
+      setTranscript,
     }),
     [supported, listening, transcript, error, start, stop, toggle]
   );

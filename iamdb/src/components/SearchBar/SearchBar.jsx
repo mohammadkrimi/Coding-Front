@@ -16,7 +16,7 @@ export default function SearchBar({
 
   const inputRef = useRef(null);
 
-  // ✅ autofocus (Home / Results)
+  //  autofocus (Home / Results)
   useEffect(() => {
     if (autoFocus) {
       requestAnimationFrame(() => {
@@ -28,13 +28,13 @@ export default function SearchBar({
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit();
-    // ✅ keep focus so Enter works again
+    // keep focus so Enter works again
     inputRef.current?.focus();
   };
 
   const handleMicClick = () => {
     onVoiceClick?.();
-    // ✅ after voice, Enter should work
+    //  after voice, Enter should work
     requestAnimationFrame(() => {
       inputRef.current?.focus();
     });
@@ -45,7 +45,7 @@ export default function SearchBar({
       <form
         className={`${styles.bar} ${showError ? styles.barError : ""}`}
         onSubmit={handleSubmit}
-        onMouseDown={() => inputRef.current?.focus()} // ✅ click anywhere → focus
+        onMouseDown={() => inputRef.current?.focus()} //  click anywhere → focus
       >
         <button
           type="submit"
