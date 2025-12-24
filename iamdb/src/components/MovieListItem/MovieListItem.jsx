@@ -42,7 +42,7 @@ export default function MovieListItem({ movie, onOpenMovie }) {
         aria-label={fav ? "Remove from favorite" : "Add to favorite"}
         aria-pressed={fav}
         onClick={(e) => {
-          e.stopPropagation(); // مهم: کلیک قلب نباید وارد دیتیل شود
+          e.stopPropagation(); 
           toggleFavorite(movie);
         }}
       >

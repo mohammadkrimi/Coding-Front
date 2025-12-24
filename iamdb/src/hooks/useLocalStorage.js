@@ -24,11 +24,10 @@ export default function useLocalStorage(key, initialValue) {
     return safeParse(raw, typeof initialValue === "function" ? initialValue() : initialValue);
   });
 
-  // write on change
+
   useEffect(() => {
     if (!isBrowser()) return;
 
-    // جلوگیری از overwrite ناخواسته در اولین رندر بعضی سناریوها
     if (initialRef.current) {
       initialRef.current = false;
     }
@@ -36,11 +35,10 @@ export default function useLocalStorage(key, initialValue) {
     try {
       window.localStorage.setItem(key, JSON.stringify(value));
     } catch {
-      // ignore quota / private mode errors
+    
     }
   }, [key, value]);
 
-  // sync across tabs
   useEffect(() => {
     if (!isBrowser()) return;
 

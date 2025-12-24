@@ -19,7 +19,7 @@ export default function Home() {
 
   const abortRef = useRef(null);
 
-  // ✅ Speech hook
+  //  Speech hook
   const speech = useSpeechToText({ lang: "en-US" });
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function Home() {
     return genres.slice(0, 4);
   }, [genres, expanded]);
 
-  // ✅ when speech transcript updates → fill the input
+  //  when speech transcript updates = fill the input
   useEffect(() => {
     if (!speech.transcript) return;
     setQuery(speech.transcript);
